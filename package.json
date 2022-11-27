@@ -1,0 +1,34 @@
+{
+  "name": "personal-iot",
+  "version": "1.0.0",
+  "description": "Personal IoT Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusanchefullstack/personal-iot.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "iot",
+    "prisma.io"
+  ],
+  "author": "Gustavo Sanchez gustavosanchezgalarza@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gusanchefullstack/personal-iot/issues"
+  },
+  "homepage": "https://github.com/gusanchefullstack/personal-iot#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
