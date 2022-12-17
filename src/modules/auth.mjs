@@ -39,11 +39,11 @@ export const validateToken = (req, res, next) => {
 
   try {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = payload;
-    next();
+    req.user = payload;   //Here we insert the user object in the header to be validated in each request
+    next();               //and then passes the req object to the router
   } catch (error) {
     res.status(401);
-    res.json({ message: "Invalid token", error: error });
+    res.json({ error: error });
     return;
   }
 };

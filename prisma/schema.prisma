@@ -22,7 +22,7 @@ model User {
   state     String?
   city      String?
   address   String?
-  Site      Site[]
+  sites     Site[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
